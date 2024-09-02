@@ -9,6 +9,7 @@ class Game(
         var turn = 1
         println("The battle begins!")
         println("${hero.name} vs ${enemy.name}")
+
         while (hero.isAlive() && enemy.isAlive()) {
             Thread.sleep(1000)
             println("\nTurn $turn")
