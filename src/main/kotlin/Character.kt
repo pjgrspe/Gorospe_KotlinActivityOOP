@@ -34,7 +34,7 @@ abstract class Character(
 
         return when {
             hpPercentage < 0.2 -> "heal" //if character hp is below 20%, it should heal
-            opponentHpPercentage <= 0.1 -> "attack" //if the opponent's hp is below 10%, it should attack
+            opponentHpPercentage <= 0.1 -> "attack" //if opponent's hp is below 10%, it should attack
             hpPercentage < 0.5 -> listOf("heal", "defend").random() //if character hp is below 50%, it should choose between healing or defending
             else -> "attack" //default action is to attack
         }
